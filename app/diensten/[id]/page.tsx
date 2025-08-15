@@ -72,10 +72,6 @@ export default function ServicePage({ params }: ServicePageProps) {
                   <Button asChild size="lg">
                     <Link href="/contact">Offerte Aanvragen</Link>
                   </Button>
-                  <Button variant="outline" size="lg" className="inline-flex items-center gap-2 bg-transparent">
-                    <Phone className="h-4 w-4" />
-                    +31 20 12644868
-                  </Button>
                 </div>
               </div>
 
@@ -224,10 +220,6 @@ export default function ServicePage({ params }: ServicePageProps) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
                 <Link href="/contact">Offerte Aanvragen</Link>
-              </Button>
-              <Button variant="outline" size="lg" className="inline-flex items-center gap-2 bg-transparent">
-                <Mail className="h-4 w-4" />
-                info@schoonwerk.online
               </Button>
             </div>
           </div>
