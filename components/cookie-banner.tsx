@@ -30,13 +30,10 @@ export function CookieBanner() {
   if (!isVisible) return null
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-in slide-in-from-bottom-full duration-500 bg-black/20 backdrop-blur-sm">
+    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-in slide-in-from-bottom-full duration-500">
       <Card className="max-w-4xl mx-auto border-border shadow-2xl bg-background/95 backdrop-blur-md">
         <CardContent className="p-6">
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-              <Cookie className="h-5 w-5 text-primary" />
-            </div>
 
             <div className="flex-1 space-y-4">
               <div className="space-y-2">
@@ -60,7 +57,7 @@ export function CookieBanner() {
                   variant="outline"
                   onClick={declineCookies}
                   size="sm"
-                  className="hover:bg-muted hover:border-primary/50 hover:scale-105 transition-all duration-200 bg-transparent"
+                  className="hover:bg-black hover:border-primary/50 hover:scale-105 transition-all duration-200  text-black"
                 >
                   Alleen Noodzakelijke
                 </Button>
@@ -68,7 +65,7 @@ export function CookieBanner() {
                   variant="ghost"
                   size="sm"
                   asChild
-                  className="hover:bg-muted hover:text-primary hover:scale-105 transition-all duration-200"
+                  className="hover:bg-muted hover:text-primary hover:scale-105 transition-all duration-200 text-black"
                 >
                   <Link href="/cookie-policy">Meer Informatie</Link>
                 </Button>

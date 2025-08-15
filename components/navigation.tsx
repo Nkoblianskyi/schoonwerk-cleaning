@@ -47,9 +47,6 @@ export function Navigation() {
               >
                 Contact
               </Link>
-              <Button asChild className="ml-4">
-                <Link href="/contact">Offerte Aanvragen</Link>
-              </Button>
             </div>
           </div>
 
