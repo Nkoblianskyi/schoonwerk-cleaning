@@ -27,7 +27,7 @@ export default function CookiePolicyPage() {
         {/* Cookie Policy Content */}
         <section className="py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">1. Wat Zijn Cookies?</CardTitle>
               </CardHeader>
@@ -45,7 +45,7 @@ export default function CookiePolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">2. Welke Cookies Gebruiken Wij?</CardTitle>
               </CardHeader>
@@ -135,7 +135,7 @@ export default function CookiePolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">3. Cookies van Derden</CardTitle>
               </CardHeader>
@@ -170,7 +170,7 @@ export default function CookiePolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">4. Hoe Lang Bewaren Wij Cookies?</CardTitle>
               </CardHeader>
@@ -201,7 +201,7 @@ export default function CookiePolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">5. Uw Cookie Voorkeuren Beheren</CardTitle>
               </CardHeader>
@@ -235,7 +235,7 @@ export default function CookiePolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">6. Wijzigingen in Dit Cookiebeleid</CardTitle>
               </CardHeader>
@@ -251,19 +251,19 @@ export default function CookiePolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
-                <CardTitle className="font-playfair text-2xl">7. Contact</CardTitle>
+                <CardTitle className="font-playfair text-2xl color-black">7. Contact</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-4 text-black">
                 <p className="text-muted-foreground leading-relaxed">
                   Heeft u vragen over ons cookiebeleid of over hoe wij cookies gebruiken? Neem dan contact met ons op:
                 </p>
-                <div className="bg-muted/50 p-4 rounded-lg space-y-2">
+                <div className="bg-muted/50 p-4 rounded-lg space-y-2 text-black">
                   <p className="text-sm">
                     <strong>SchoonWerk</strong>
                   </p>
-                  <p className="text-sm">E-mail: {companyInfo.email}</p>
+                  <p className="text-sm ">E-mail: {companyInfo.email}</p>
                   <p className="text-sm">Telefoon: {companyInfo.phone}</p>
                   <p className="text-sm">Adres: {companyInfo.address}</p>
                   <p className="text-sm">Website: www.schoonwerk.online</p>

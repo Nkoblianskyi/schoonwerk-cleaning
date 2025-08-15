@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
         {/* Privacy Policy Content */}
         <section className="py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">1. Wie Zijn Wij?</CardTitle>
               </CardHeader>
@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">2. Welke Gegevens Verzamelen Wij?</CardTitle>
               </CardHeader>
@@ -85,7 +85,7 @@ export default function PrivacyPolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">3. Waarvoor Gebruiken Wij Uw Gegevens?</CardTitle>
               </CardHeader>
@@ -118,7 +118,7 @@ export default function PrivacyPolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">4. Hoe Beschermen Wij Uw Gegevens?</CardTitle>
               </CardHeader>
@@ -148,7 +148,7 @@ export default function PrivacyPolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">5. Delen Wij Uw Gegevens?</CardTitle>
               </CardHeader>
@@ -177,7 +177,7 @@ export default function PrivacyPolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">6. Uw Rechten</CardTitle>
               </CardHeader>
@@ -225,7 +225,7 @@ export default function PrivacyPolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">7. Bewaartermijnen</CardTitle>
               </CardHeader>
@@ -256,7 +256,7 @@ export default function PrivacyPolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">8. Wijzigingen in Dit Beleid</CardTitle>
               </CardHeader>
@@ -268,7 +268,7 @@ export default function PrivacyPolicyPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-border">
+            <Card className="border-border text-black">
               <CardHeader>
                 <CardTitle className="font-playfair text-2xl">9. Contact</CardTitle>
               </CardHeader>
