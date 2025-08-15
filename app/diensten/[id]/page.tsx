@@ -74,7 +74,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                   </Button>
                   <Button variant="outline" size="lg" className="inline-flex items-center gap-2 bg-transparent">
                     <Phone className="h-4 w-4" />
-                    +31 20 123 4567
+                    +31 20 12644868
                   </Button>
                 </div>
               </div>

@@ -33,19 +33,23 @@ export function ServicesSection() {
             return (
               <Card
                 key={service.id}
-                className="group hover:shadow-lg transition-all duration-300 border-border hover:border-primary/20"
+                className="group hover:shadow-lg transition-all duration-300 border-border hover:border-primary/20 flex flex-col h-full"
               >
                 <CardHeader className="text-center pb-4">
                   <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                     <IconComponent className="h-8 w-8 text-primary" />
                   </div>
-                  <CardTitle className="text-xl font-playfair">{service.title}</CardTitle>
+                  <CardTitle className="text-xl text-black font-playfair">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="text-center space-y-4">
-                  <CardDescription className="text-muted-foreground leading-relaxed">
+                <CardContent className="text-center flex-1 flex flex-col justify-between">
+                  <CardDescription className="text-muted-foreground leading-relaxed mb-6">
                     {service.shortDescription}
                   </CardDescription>
-                  <Button variant="ghost" asChild className="group/btn">
+                  <Button
+                    variant="ghost"
+                    asChild
+                    className="group/btn bg-primary text-primary-foreground hover:bg-primary/90 font-medium mt-auto"
+                  >
                     <Link href={`/diensten/${service.id}`} className="inline-flex items-center gap-2">
                       Meer Info
                       <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
