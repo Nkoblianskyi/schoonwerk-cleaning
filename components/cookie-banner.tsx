@@ -30,8 +30,8 @@ export function CookieBanner() {
   if (!isVisible) return null
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-in slide-in-from-bottom-full duration-500">
-      <Card className="max-w-4xl mx-auto border-border shadow-2xl">
+    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-in slide-in-from-bottom-full duration-500 bg-black/20 backdrop-blur-sm">
+      <Card className="max-w-4xl mx-auto border-border shadow-2xl bg-background/95 backdrop-blur-md">
         <CardContent className="p-6">
           <div className="flex items-start gap-4">
             <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -49,31 +49,56 @@ export function CookieBanner() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button onClick={acceptCookies} size="sm">
+                <Button
+                  onClick={acceptCookies}
+                  size="sm"
+                  className="hover:bg-primary/90 hover:scale-105 transition-all duration-200"
+                >
                   Alle Cookies Accepteren
                 </Button>
-                <Button variant="outline" onClick={declineCookies} size="sm">
+                <Button
+                  variant="outline"
+                  onClick={declineCookies}
+                  size="sm"
+                  className="hover:bg-muted hover:border-primary/50 hover:scale-105 transition-all duration-200 bg-transparent"
+                >
                   Alleen Noodzakelijke
                 </Button>
-                <Button variant="ghost" size="sm" asChild>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  asChild
+                  className="hover:bg-muted hover:text-primary hover:scale-105 transition-all duration-200"
+                >
                   <Link href="/cookie-policy">Meer Informatie</Link>
                 </Button>
               </div>
 
               <p className="text-xs text-muted-foreground">
                 Lees ons{" "}
-                <Link href="/privacy-policy" className="text-primary hover:underline">
+                <Link
+                  href="/privacy-policy"
+                  className="text-primary hover:underline hover:text-primary/80 transition-colors"
+                >
                   privacybeleid
                 </Link>{" "}
                 en{" "}
-                <Link href="/cookie-policy" className="text-primary hover:underline">
+                <Link
+                  href="/cookie-policy"
+                  className="text-primary hover:underline hover:text-primary/80 transition-colors"
+                >
                   cookiebeleid
                 </Link>{" "}
                 voor meer informatie.
               </p>
             </div>
 
-            <Button variant="ghost" size="sm" onClick={declineCookies} className="h-8 w-8 p-0 flex-shrink-0">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={declineCookies}
+              className="h-8 w-8 p-0 flex-shrink-0 hover:bg-muted hover:scale-110 transition-all duration-200"
+            >
               <X className="h-4 w-4" />
             </Button>
           </div>
